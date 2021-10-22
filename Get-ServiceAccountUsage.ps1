@@ -17,8 +17,8 @@ Jake Ouellette 10.22.21
 #>
 
 #Parameters
-$ServiceAccount = 
-$OU = 
+$ServiceAccount = ""
+$OU = ""
 
 #End of required parameters, do not edit below this comment
 $Computers = Get-ADComputer -Filter * -SearchBase $OU | Select Name | Sort-Object Name
