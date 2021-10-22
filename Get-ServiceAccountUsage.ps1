@@ -6,7 +6,10 @@ User inputs OU and Service Account name
 
 $OU should be in in this format: "OU=Servers,OU=Contoso,DC=Contoso,DC=local"
 
-$ServicAccount should be in this format: "contoso.local\svcaccount"
+$ServicAccount should be in this format: "contoso.local\\svcaccount"
+	Note: When including domain and using backslash (\), make sure to double up on backslash. This is due to how
+            Powershell processes the single backslash. Double backslash will process normally. If you get a ton
+            of WARNING output, you probably only did one backslash.
 	Note: wildcards (%) can be used to search for just portions of a service account name: "%svcaccount%"
 
 Jake Ouellette 10.22.21
