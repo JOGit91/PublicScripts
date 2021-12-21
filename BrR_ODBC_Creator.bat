@@ -15,5 +15,5 @@ set /p DB_Name2=""
 
 Echo %WINDIR%\system32\odbcconf.exe CONFIGSYSDSN "SQL Server" "DSN=%DB_Name%|Description=%DB_Description%|SERVER=%DB_Server%|Trusted_Connection=Yes|Database=%DB_Name2%" > C:\Add_"%DB_Name%".bat
 
+# This tool prompts for ODBC database connector information and outputs a batch file that can be used to add the database to user PCs #
 # Created 12.6.19 by Jake Ouellette #
-
