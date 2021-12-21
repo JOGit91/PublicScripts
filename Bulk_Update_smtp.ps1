@@ -1,6 +1,10 @@
 ﻿<# Written by Jake Ouellette 9.24.20
 .NAME
     Bulk_Add_smtp
+.SYNOPSIS
+    This script automates the process of adding a secondary proxy address (smtp) to user attribute field in AD. GUI input.
+.PARAMETERS
+    Input the desired smtp address (new domain only) and the Organizational Unit to target in AD. 
 #>
 
 Add-Type -AssemblyName System.Windows.Forms
