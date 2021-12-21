@@ -8,6 +8,13 @@
 .PARAMETERS
     Define a name for the search. Email search queries include date received, email subject, and sender.
     
+.NOTES
+    Features a pop out window to review search results before initiating purge. Also includes search status and purge status indicators.
+    Best run using ISE.
+
+.ISSUES
+    All input fields must contain a value.
+    Clicking on the purge puts the prompt to continue in the background powershell window. Keep an eye out for it.
 #>
 
 Add-Type -AssemblyName System.Windows.Forms
